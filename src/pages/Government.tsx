@@ -22,7 +22,7 @@ const Government: React.FC = () => {
     layout: 'list',
     pages: [],
   });
-  const [loading, setLoading] = useState(false);
+  const [loadedCategory, setLoadedCategory] = useState<string | null>(null);
   const subcategories: Subcategory[] = categoryIndex.pages;
 
   const getCategory = () => {
@@ -33,14 +33,29 @@ const Government: React.FC = () => {
   const Icon = LucideIcons[
     categoryData?.icon as keyof typeof LucideIcons
   ] as React.ComponentType<{ className?: string }>;
+  const loading = Boolean(
+    category && categoryData && loadedCategory !== category
+  );
 
   useEffect(() => {
     if (category && categoryData) {
-      setLoading(true);
+      let cancelled = false;
+
       getCategorySubcategories(category)
-        .then(setCategoryIndex)
-        .catch(console.error)
-        .finally(() => setLoading(false));
+        .then(index => {
+          if (cancelled) return;
+          setCategoryIndex(index);
+          setLoadedCategory(category);
+        })
+        .catch(error => {
+          if (cancelled) return;
+          console.error(error);
+          setLoadedCategory(category);
+        });
+
+      return () => {
+        cancelled = true;
+      };
     }
   }, [category, categoryData]);
 

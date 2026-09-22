@@ -47,13 +47,14 @@ export default function Document({
   const [breadcrumbs, setBreadcrumbs] = useState([
     { label: 'Home', href: '/' },
   ]);
+  const requestError =
+    !documentSlug || !category || !categoryType
+      ? 'No document specified'
+      : null;
+  const displayError = requestError ?? error;
 
   useEffect(() => {
-    if (!documentSlug || !category || !categoryType) {
-      setError('No document specified');
-      setLoading(false);
-      return;
-    }
+    if (!documentSlug || !category || !categoryType) return;
 
     const loadContent = async () => {
       try {
@@ -116,26 +117,26 @@ export default function Document({
     };
 
     loadContent();
-  }, [documentSlug, category, categoryType]);
+  }, [documentSlug, category, categoryType, requestError]);
 
-  if (loading) {
-    return (
-      <Section className="p-3 mb-12">
-        <Banner type="info" description="Loading document..." />
-      </Section>
-    );
-  }
-
-  if (error) {
+  if (displayError) {
     return (
       <Section className="p-3 mb-12">
         <Breadcrumbs className="mb-8" items={breadcrumbs} />
         <Banner
           type="error"
           title="Document Not Found"
-          description={error}
+          description={displayError}
           icon
         />
+      </Section>
+    );
+  }
+
+  if (loading) {
+    return (
+      <Section className="p-3 mb-12">
+        <Banner type="info" description="Loading document..." />
       </Section>
     );
   }

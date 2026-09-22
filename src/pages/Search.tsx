@@ -10,15 +10,15 @@ export default function Search() {
   const [results, setResults] = useState<SearchHit[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
+  const [searchedQuery, setSearchedQuery] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const hasQuery = Boolean(query.trim());
+  const isCurrentSearch = searchedQuery === query;
+  const displayError = hasQuery && isCurrentSearch ? error : null;
+  const showSearchState = hasQuery && hasSearched && isCurrentSearch;
 
   useEffect(() => {
-    if (!query.trim()) {
-      setResults([]);
-      setHasSearched(false);
-      setError(null);
-      return;
-    }
+    if (!hasQuery) return;
 
     const timer = setTimeout(async () => {
       setIsLoading(true);
@@ -28,16 +28,18 @@ export default function Search() {
         const res = await index.search<SearchHit>(query, { limit: 20 });
         setResults(res.hits);
         setHasSearched(true);
+        setSearchedQuery(query);
       } catch {
         setError('Search is unavailable. Please try again later.');
         setResults([]);
+        setSearchedQuery(query);
       } finally {
         setIsLoading(false);
       }
     }, 300);
 
     return () => clearTimeout(timer);
-  }, [query]);
+  }, [hasQuery, query]);
 
   return (
     <main className="container mx-auto px-4 py-8 max-w-3xl">
@@ -55,24 +57,29 @@ export default function Search() {
         />
       </div>
 
-      {error && (
-        <div className="text-center py-12 text-red-500 text-sm">{error}</div>
+      {displayError && (
+        <div className="text-center py-12 text-red-500 text-sm">
+          {displayError}
+        </div>
       )}
 
-      {!error && isLoading && (
+      {!displayError && isLoading && (
         <div className="text-center py-12 text-gray-500 text-sm">
           Searching...
         </div>
       )}
 
-      {!error && !isLoading && hasSearched && results.length === 0 && (
-        <div className="text-center py-12 text-gray-500">
-          No results for{' '}
-          <span className="font-medium">&ldquo;{query}&rdquo;</span>
-        </div>
-      )}
+      {!displayError &&
+        !isLoading &&
+        showSearchState &&
+        results.length === 0 && (
+          <div className="text-center py-12 text-gray-500">
+            No results for{' '}
+            <span className="font-medium">&ldquo;{query}&rdquo;</span>
+          </div>
+        )}
 
-      {!error && !isLoading && results.length > 0 && (
+      {!displayError && !isLoading && hasQuery && results.length > 0 && (
         <div className="space-y-3">
           <p className="text-sm text-gray-500 mb-4">
             {results.length} result{results.length !== 1 ? 's' : ''} for &ldquo;
@@ -106,7 +113,7 @@ export default function Search() {
         </div>
       )}
 
-      {!hasSearched && !isLoading && !error && (
+      {!showSearchState && !isLoading && !displayError && (
         <div className="text-center py-12 text-gray-400 text-sm">
           Start typing to search across services and government information
         </div>

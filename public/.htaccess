@@ -1,0 +1,9 @@
+# Serve the React single-page application for routes such as /services.
+# Existing files and directories (JavaScript, CSS, images, etc.) are served normally.
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^ index.html [L]

@@ -173,6 +173,25 @@ npm run build
 - **Custom domain** capability
 - **CDN** (recommended for performance)
 
+#### React routes on Apache or LiteSpeed
+
+This website uses client-side routes such as `/services` and
+`/government/departments`. Your server must return `index.html` for those
+paths so React Router can render the correct page.
+
+The project includes `public/.htaccess`, which Vite copies into `dist/` when
+you run `npm run build`. When deploying with cPanel, Hostinger, FTP, or a file
+manager, upload **all** of the contents of `dist/`, including the hidden
+`.htaccess` file. Enable “show hidden files” in the file manager if needed.
+
+For an Nginx server, configure the site location with:
+
+```nginx
+location / {
+  try_files $uri $uri/ /index.html;
+}
+```
+
 ### Option 4: AWS S3 with Terraform
 
 Deploy to AWS S3 using Infrastructure as Code (Terraform) for full control and scalability.

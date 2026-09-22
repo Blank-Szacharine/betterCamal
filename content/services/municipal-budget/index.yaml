@@ -1,0 +1,18 @@
+layout: grid
+title: 'Municipal Budget Office'
+description: 'Budget-office directory and published document checklists. Confirm current requirements with the office before filing.'
+
+pages:
+  - name: 'Meet the Budget Office Team'
+    slug: 'budget-office-team'
+    kind: 'directory'
+    description: 'Municipal Budget Office personnel and roles.'
+  - name: 'LGU Operating Expense Obligation Request'
+    slug: 'lgu-operating-expense-obligation-request'
+    description: 'Requirements and process for an obligation request for operating expenses.'
+  - name: 'Annual Barangay Budget Review'
+    slug: 'annual-barangay-budget-review'
+    description: 'Checklist for review of a barangay annual budget.'
+  - name: 'Supplemental Barangay Budget Review'
+    slug: 'supplemental-barangay-budget-review'
+    description: 'Checklist for review of a barangay supplemental budget.'

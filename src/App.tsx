@@ -7,6 +7,12 @@ import ScrollToTop from './components/ui/ScrollToTop';
 import Services from './pages/Services';
 import Document from './pages/Document';
 import Government from './pages/Government';
+import {
+  BarangayDirectory,
+  BarangayHierarchy,
+  GovernmentLanding,
+  MunicipalOfficials,
+} from './pages/GovernmentDirectory';
 import Search from './pages/Search';
 import { isMeilisearchEnabled } from './lib/meilisearch';
 import { BrowserRouter as Router, Routes, Route } from 'react-router';
@@ -27,8 +33,20 @@ function App() {
                 path="/services/:category/:documentSlug"
                 element={<Document categoryType="service" />}
               />
+              <Route path="/government" element={<GovernmentLanding />} />
+              <Route
+                path="/government/officials"
+                element={<MunicipalOfficials />}
+              />
+              <Route
+                path="/government/barangays"
+                element={<BarangayDirectory />}
+              />
+              <Route
+                path="/government/barangays/:barangaySlug"
+                element={<BarangayHierarchy />}
+              />
               <Route path="/government/:category" element={<Government />} />
-              <Route path="/government" element={<Government />} />
               <Route
                 path="/government/:category/:documentSlug"
                 element={<Document categoryType="government" />}

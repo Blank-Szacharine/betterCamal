@@ -24,7 +24,11 @@ export const mainNavigation: NavigationItem[] = [
   },
   {
     label: 'Government',
-    href: '/government/departments',
+    href: '/government',
+    children: [
+      { label: 'Officials', href: '/government/officials' },
+      { label: 'Barangays', href: '/government/barangays' },
+    ],
   },
   { label: 'Updates', href: '/#updates' },
   { label: 'About Camalaniugan', href: '/#about' },

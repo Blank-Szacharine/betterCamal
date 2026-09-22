@@ -1,0 +1,9 @@
+layout: grid
+title: 'Municipal Environment and Natural Resources Office'
+description: 'Office directory for environmental and natural-resources management in Camalaniugan.'
+
+pages:
+  - name: 'Meet the MENRO Team'
+    slug: 'menro-team'
+    kind: 'directory'
+    description: 'Municipal Environment and Natural Resources Office personnel and roles.'

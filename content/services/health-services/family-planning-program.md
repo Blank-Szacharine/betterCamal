@@ -1,6 +1,6 @@
-# Family Planning Program - Camalaniugan
+# Modern Family Planning Services - Camalaniugan
 
-The Family Planning Program provides counseling and access to appropriate family planning information and services through the Municipal Health Office.
+Modern Family Planning Services support women of reproductive age (15–49 years old) with counseling and appropriate family-planning services through the Rural Health Unit.
 
 ## Who this is for
 
@@ -19,7 +19,7 @@ Individuals and couples who want guidance on family planning, birth spacing, or 
 2. Discuss health history, preferences, and eligibility with health staff.
 3. Receive counseling, the appropriate service, or a referral.
 
-The health worker will explain the available method, follow-up schedule, and any warning signs. Confirm the current clinic schedule with the Municipal Health Office.
+The health worker will explain the available method, follow-up schedule, and any warning signs. The Municipal Health Office also brings family-planning services to barangays through its midwives to improve access. Confirm the current clinic or barangay schedule before visiting.
 
 ## Office
 

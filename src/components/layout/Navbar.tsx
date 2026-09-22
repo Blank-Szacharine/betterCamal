@@ -41,6 +41,27 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50">
+      {/* Compact emergency contacts strip */}
+      <div
+        id="emergency"
+        className="bg-error-50 border-b border-error-100 text-error-700"
+      >
+        <div className="container mx-auto px-4 h-8 flex items-center overflow-x-auto whitespace-nowrap text-xs">
+          <span className="font-semibold mr-3">Emergency hotlines:</span>
+          <a href="tel:09675260473" className="hover:text-error-900">
+            RESCUE: 0967 526 0473
+          </a>
+          <span className="mx-3 text-error-300">|</span>
+          <a href="tel:09171199139" className="hover:text-error-900">
+            BFP: 0917 119 9139
+          </a>
+          <span className="mx-3 text-error-300">|</span>
+          <a href="tel:09175146905" className="hover:text-error-900">
+            PNP: 0917 514 6905
+          </a>
+        </div>
+      </div>
+
       {/* Top bar with language switcher and additional links */}
       <div className="border-b border-gray-200">
         <div className="container mx-auto px-4 flex justify-end items-center h-10">

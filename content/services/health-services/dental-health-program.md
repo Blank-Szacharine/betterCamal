@@ -1,4 +1,4 @@
-# Dental Health Program - Camalaniugan
+# Dental Services - Camalaniugan
 
 The Dental Health Program provides basic dental assessment, prevention guidance, and treatment or referral support through the Municipal Health Office.
 
@@ -19,7 +19,7 @@ Residents who need a dental check-up, oral health advice, basic dental care, or 
 2. Complete the dental assessment.
 3. Receive care, prevention advice, follow-up instructions, or referral.
 
-Confirm the current dental clinic schedule, available procedures, and any applicable charges with the Municipal Health Office.
+The published page notes that the dental schedule is posted on the MHO Facebook page one month in advance. Service availability, procedures, and charges can change, so confirm the current schedule with the Municipal Health Office.
 
 ## Office
 

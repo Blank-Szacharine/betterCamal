@@ -1,0 +1,18 @@
+layout: grid
+title: 'Municipal Planning and Development Office'
+description: 'Zoning-administration services and published requirements. Confirm current requirements, fees, and forms with the MPDO before applying.'
+
+pages:
+  - name: 'MPDO Leadership'
+    slug: 'mpdo-leadership'
+    kind: 'directory'
+    description: 'Municipal Planning and Development Office leadership.'
+  - name: 'Certificate of Zoning Compliance'
+    slug: 'certificate-of-zoning-compliance'
+    description: 'Zoning clearance for residential, commercial, industrial, and institutional projects.'
+  - name: 'Zoning Compliance for Piggery and Poultry'
+    slug: 'piggery-and-poultry-zoning-compliance'
+    description: 'Published zoning-clearance requirements for piggery and poultry projects.'
+  - name: 'Zoning Compliance for Cell Sites'
+    slug: 'cell-site-zoning-compliance'
+    description: 'Published zoning-clearance requirements for telecommunications cell sites.'

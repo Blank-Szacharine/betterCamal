@@ -15,6 +15,7 @@ import SEO from '../components/SEO';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
 import { useState, useEffect } from 'react';
+import { UsersRound } from 'lucide-react';
 
 const Services: React.FC = () => {
   const { category } = useParams();
@@ -24,6 +25,12 @@ const Services: React.FC = () => {
   });
   const [loadedCategory, setLoadedCategory] = useState<string | null>(null);
   const subcategories: Subcategory[] = categoryIndex.pages;
+  const directoryPages = subcategories.filter(
+    subcategory => subcategory.kind === 'directory'
+  );
+  const servicePages = subcategories.filter(
+    subcategory => subcategory.kind !== 'directory'
+  );
 
   const getCategory = () => {
     return serviceCategories.categories.find(c => c.slug === category);
@@ -115,9 +122,48 @@ const Services: React.FC = () => {
                 {categoryIndex.description}
               </Text>
             )}
+            {directoryPages.map(subcategory => (
+              <Link
+                key={subcategory.slug}
+                to={`/services/${category}/${subcategory.slug}`}
+                className="mb-8 block"
+              >
+                <Card
+                  hoverable
+                  className="overflow-hidden border border-[#b9d3de] bg-[#edf6f8]"
+                >
+                  <CardContent className="flex flex-col gap-5 p-6 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="flex items-start gap-4">
+                      <div className="rounded-full bg-[#17324d] p-3 text-[#e3b35a]">
+                        <UsersRound className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#c26b30]">
+                          Staff directory
+                        </p>
+                        <h4 className="mt-1 text-xl font-bold text-[#17324d]">
+                          {subcategory.name}
+                        </h4>
+                        {subcategory.description && (
+                          <p className="mt-2 text-sm text-[#596575]">
+                            {subcategory.description}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                    <span className="text-sm font-bold text-[#1f4f78]">
+                      View the team →
+                    </span>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+            {directoryPages.length > 0 && servicePages.length > 0 && (
+              <Heading level={3}>{categoryData.category} services</Heading>
+            )}
             {categoryIndex.layout === 'grid' ? (
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {subcategories.map(subcategory => (
+                {servicePages.map(subcategory => (
                   <Link
                     key={subcategory.slug}
                     to={`/services/${category}/${subcategory.slug}`}
@@ -145,7 +191,7 @@ const Services: React.FC = () => {
               </div>
             ) : (
               <div className="space-y-4">
-                {subcategories.map(subcategory => (
+                {servicePages.map(subcategory => (
                   <Link
                     key={subcategory.slug}
                     to={`/services/${category}/${subcategory.slug}`}

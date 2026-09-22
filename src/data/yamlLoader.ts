@@ -5,6 +5,7 @@ export interface Subcategory {
   name: string;
   slug: string;
   description?: string;
+  kind?: 'directory';
 }
 
 export interface Category {
@@ -33,6 +34,9 @@ import governmentActivitiesYamlContent from './government.yaml?raw';
 
 // Import all category index files statically
 import healthServicesIndex from '../../content/services/health-services/index.yaml?raw';
+import planningDevelopmentIndex from '../../content/services/planning-development/index.yaml?raw';
+import environmentNaturalResourcesIndex from '../../content/services/environment-natural-resources/index.yaml?raw';
+import municipalBudgetIndex from '../../content/services/municipal-budget/index.yaml?raw';
 import educationIndex from '../../content/services/education/index.yaml?raw';
 import businessIndex from '../../content/services/business/index.yaml?raw';
 import socialWelfareIndex from '../../content/services/social-welfare/index.yaml?raw';
@@ -48,6 +52,9 @@ import governmentDepartmentsLegislativeIndex from '../../content/government/depa
 // Create a mapping of category slugs to their YAML content
 const categoryIndexMap: { [key: string]: string } = {
   'health-services': healthServicesIndex,
+  'planning-development': planningDevelopmentIndex,
+  'environment-natural-resources': environmentNaturalResourcesIndex,
+  'municipal-budget': municipalBudgetIndex,
   education: educationIndex,
   business: businessIndex,
   'social-welfare': socialWelfareIndex,

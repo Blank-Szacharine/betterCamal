@@ -9,48 +9,17 @@ categories:
     description: 'Official Camalaniugan health programs and services listed in the Citizen’s Charter.'
     icon: 'Heart'
 
-  - category: 'Education'
-    slug: 'education'
-    description: 'Employment, youth, and other citizen-facing support services listed in the Citizen’s Charter.'
-    icon: 'GraduationCap'
+  - category: 'Planning & Development'
+    slug: 'planning-development'
+    description: 'Zoning compliance and planning-related services of the Municipal Planning and Development Office.'
+    icon: 'Map'
 
-  - category: 'Business and Livelihood'
-    slug: 'business'
-    description: 'Permits, treasury transactions, market services, agriculture, and employment services in the Citizen’s Charter.'
-    icon: 'Building2'
-
-  - category: 'Social Welfare'
-    slug: 'social-welfare'
-    description: 'Social welfare, PWD, youth, and senior citizen services listed in the Citizen’s Charter.'
-    icon: 'Users'
-  
-  - category: 'Agriculture & Fisheries'
-    slug: 'agriculture-fisheries'
-    description: 'Agriculture and fisheries technical assistance and animal health services in the Citizen’s Charter.'
-    icon: 'Wheat'
-  
-  - category: 'Infrastructure & Public Works'
-    slug: 'infrastructure-public-works'
-    description: 'Water subscription, engineering permits, and land-use services listed in the Citizen’s Charter.'
-    icon: 'Wrench'
-  
-  - category: 'Garbage and Waste Disposal'
-    slug: 'garbage-waste-disposal'
-    description: 'Business-related environmental clearance requirements and the official charter source.'
-    icon: 'Trash2'
-  
-  - category: 'Environment'
-    slug: 'environment'
-    description: 'Tourism and economic enterprise services listed in the Citizen’s Charter.'
+  - category: 'Environment & Natural Resources'
+    slug: 'environment-natural-resources'
+    description: 'Municipal Environment and Natural Resources Office directory.'
     icon: 'TreePine'
-  
-  - category: 'Disaster Preparedness'
-    slug: 'disaster-preparedness'
-    description: 'Emergency response, disaster risk reduction training, and non-emergency transport services.'
-    icon: 'Shield'
-  
-  - category: 'Housing & Land Use'
-    slug: 'housing-land-use'
-    description: 'Civil registry, assessment, legislative, accounting, budget, burial, and other charter services.'
-    icon: 'Home'
-  
+
+  - category: 'Municipal Budget Office'
+    slug: 'municipal-budget'
+    description: 'Budget processing and barangay budget-review services.'
+    icon: 'WalletCards'

@@ -1,10 +1,10 @@
 # Daily Consultation - Camalaniugan
 
-The Municipal Health Office provides initial consultation and assessment for common health concerns and follow-up needs.
+The Municipal Health Office provides day-to-day outpatient consultation to treat common illnesses and help prevent, reduce, and control disease.
 
 ## Who this is for
 
-Residents who need a basic health assessment, advice, referral, or follow-up from the Municipal Health Office.
+Residents who need a basic health assessment, advice, referral, or follow-up. The published service information also describes 24/7 support for emergency cases.
 
 ## What to prepare
 
@@ -19,7 +19,7 @@ Residents who need a basic health assessment, advice, referral, or follow-up fro
 2. Explain your concern and share relevant health records.
 3. Receive a consultation, health advice, treatment guidance, or referral.
 
-Consultation schedules and any applicable charges should be confirmed with the Municipal Health Office before visiting.
+The published page also refers to COVID-19 patients, locally stranded individuals, and returning overseas Filipinos; those procedures were pandemic-era guidance. Confirm all current arrangements with the Municipal Health Office before visiting.
 
 ## Office
 

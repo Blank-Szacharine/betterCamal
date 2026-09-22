@@ -2,8 +2,22 @@
 # This file contains all the pages/governments/departments/legislative available under the Department
 #
 layout: grid
-title: 'Legislative Department'
-description: 'Page Description'
+title: 'Sangguniang Bayan'
+description: 'The legislative body of the Municipality of Camalaniugan.'
 pages:
-  - name: 'Councilor A'
-    description: 'Description'
+  - name: 'Hon. Leezel A. Rosario'
+    description: 'Sangguniang Bayan Member'
+  - name: 'Hon. Dante B. Canillo'
+    description: 'Sangguniang Bayan Member'
+  - name: 'Hon. Milagros C. Libatique'
+    description: 'Sangguniang Bayan Member'
+  - name: 'Hon. Roberto S. Alariao'
+    description: 'Sangguniang Bayan Member'
+  - name: 'Hon. Hilda B. Littaua'
+    description: 'Sangguniang Bayan Member'
+  - name: 'Hon. Edison B. Tollo'
+    description: 'Sangguniang Bayan Member'
+  - name: 'Hon. Francis M. Teaño'
+    description: 'Sangguniang Bayan Member'
+  - name: 'Hon. Hermogenes U. Lorenzo'
+    description: 'Sangguniang Bayan Member'

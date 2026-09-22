@@ -1,19 +1,47 @@
-# Business & Livelihood Category Pages
-# This file contains all the pages/services available under the Business & Livelihood category
+layout: grid
+title: 'Business, treasury, and enterprise services'
+description: 'Choose a transaction to see the documents, fees, and next steps.'
 
 pages:
-  - name: "Apply for barangay clearance and mayor's business permits"
-    slug: 'apply-for-barangay-clearance-and-mayors-business-permits'
-    description: "Step-by-step guide to applying for barangay clearance and mayor's business permits for your business."
-    
-  - name: 'Renew permits and pay local business taxes'
-    slug: 'renew-permits-and-pay-local-business-taxes'
-    description: 'Information about renewing business permits and paying local business taxes to your local government.'
-    
-  - name: 'Rent stalls in public markets'
-    slug: 'rent-stalls-in-public-markets'
-    description: 'How to rent stalls in local government public markets for your business.'
-    
-  - name: 'Join trade fairs, business expos, or tourism promotions'
-    slug: 'join-trade-fairs-business-expos-or-tourism-promotions'
-    description: 'Participate in local trade fairs, business expos, and tourism promotion activities.'
+  - name: "Mayor's Permit for MTOP"
+    slug: 'mayors-permit-for-mtop'
+    description: 'Apply for a Motorized Tricycle Operator’s Permit.'
+  - name: "Mayor's Clearance"
+    slug: 'mayors-clearance'
+    description: 'Request a mayor’s clearance for employment or other transactions.'
+  - name: 'Job Recommendation'
+    slug: 'job-recommendation'
+    description: 'Request a municipal job recommendation letter.'
+  - name: 'Water Subscription'
+    slug: 'water-subscription'
+    description: 'Apply for a Camalaniugan Rural Water Sanitation System connection.'
+  - name: 'Business or Mayor’s Permit'
+    slug: 'business-or-mayors-permit'
+    description: 'Apply for a new, renewal, temporary, or seasonal business permit.'
+  - name: 'Business Status or Cessation Certificate'
+    slug: 'business-status-or-cessation-certificate'
+    description: 'Request a certificate for non-existing, existing, or ceased business.'
+  - name: 'Online Business Permit Application'
+    slug: 'online-business-permit-application'
+    description: 'Start a business or mayor’s permit application online.'
+  - name: 'Payment of Real Property Tax'
+    slug: 'payment-of-real-property-tax'
+    description: 'Pay annual or quarterly real property tax.'
+  - name: 'Community Tax Certificate'
+    slug: 'community-tax-certificate'
+    description: 'Request a Community Tax Certificate.'
+  - name: 'Tax Clearance'
+    slug: 'tax-clearance'
+    description: 'Request a tax clearance certificate.'
+  - name: 'Certificate of Ownership of Large Cattle'
+    slug: 'certificate-of-ownership-of-large-cattle'
+    description: 'Request proof of ownership for large cattle.'
+  - name: 'Transfer of Ownership of Large Cattle'
+    slug: 'transfer-of-ownership-of-large-cattle'
+    description: 'Process a large-cattle ownership transfer.'
+  - name: 'Processing of Claim'
+    slug: 'processing-of-claim'
+    description: 'Process an approved municipal payment claim.'
+  - name: 'Calibration of Weighing Scales'
+    slug: 'calibration-of-weighing-scales'
+    description: 'Have commercial weighing scales checked, sealed, and recorded.'

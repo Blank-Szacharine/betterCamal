@@ -1,19 +1,27 @@
 # Health Services Category Pages
-# This file contains all the pages/services available under the Health Services category
+layout: grid
+title: 'Municipal Health Office services'
+description: 'Choose a health service to see what it is for, what to prepare, and what to expect when you visit.'
 
 pages:
-  - name: 'Get free check-ups, basic medicines, and vaccines'
-    slug: 'get-free-check-ups-basic-medicines-and-vaccines'
-    description: 'Access free medical check-ups, basic medicines, and vaccination services provided by your local government.'
-    
-  - name: 'Access maternal care and child immunization'
-    slug: 'access-maternal-care-and-child-immunization'
-    description: 'Information about maternal health services and child immunization programs available in your area.'
-    
-  - name: 'Go to the local hospital for treatment or confinement'
-    slug: 'go-to-the-local-hospital-for-treatment-or-confinement'
-    description: 'Details about local hospital services, treatment options, and confinement procedures.'
-    
-  - name: 'Join health programs (nutrition, dengue control, TB treatment)'
-    slug: 'join-health-programs-nutrition-dengue-control-tb-treatment'
-    description: 'Participate in various health programs including nutrition support, dengue control, and TB treatment initiatives.'
+  - name: 'Daily Consultation'
+    slug: 'daily-consultation'
+    description: 'General consultation and initial assessment for common health concerns.'
+  - name: 'Family Planning Program'
+    slug: 'family-planning-program'
+    description: 'Counseling and family planning services for eligible residents.'
+  - name: 'Disease Control Program'
+    slug: 'disease-control-program'
+    description: 'Community disease prevention, monitoring, treatment support, and referrals.'
+  - name: 'Laboratory Program - Disease Control'
+    slug: 'laboratory-program-disease-control'
+    description: 'Laboratory support for disease-control programs and clinical assessment.'
+  - name: 'Laboratory Program - Blood Chemistry'
+    slug: 'laboratory-program-blood-chemistry'
+    description: 'Blood chemistry testing and guidance on preparing for laboratory services.'
+  - name: 'Laboratory Program - Newborn Screening'
+    slug: 'laboratory-program-newborn-screening'
+    description: 'Newborn screening assistance for infants and their parents or guardians.'
+  - name: 'Dental Health Program'
+    slug: 'dental-health-program'
+    description: 'Basic dental assessment, prevention, and treatment guidance.'

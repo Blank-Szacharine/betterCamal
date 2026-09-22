@@ -45,35 +45,23 @@ const Navbar: React.FC = () => {
       <div className="border-b border-gray-200">
         <div className="container mx-auto px-4 flex justify-end items-center h-10">
           <div className="flex items-center space-x-4">
-            <a
-              href="https://bettergov.ph/join-us"
-              className="text-xs text-primary-600 hover:text-primary-700 font-semibold transition-colors"
-              target="_blank"
-            >
-              🚀 Join Us
-            </a>
-            <a
-              href="https://bettergov.ph/about"
-              className="text-xs text-gray-800 hover:text-primary-600 transition-colors"
-              target="_blank"
-            >
-              About BetterGov
-            </a>
+            <span className="text-xs font-semibold text-gray-700">
+              Republic of the Philippines
+            </span>
             <a
               href="https://www.gov.ph"
               className="text-xs text-gray-800 hover:text-primary-600 transition-colors"
               target="_blank"
+              rel="noreferrer"
             >
-              Official Gov.ph
+              Gov.ph
             </a>
 
             <a
-              href="https://bettergov.ph/philippines/hotlines"
+              href="#emergency"
               className="text-xs text-gray-800 hover:text-primary-600 transition-colors"
-              target="_blank"
-              rel="noreferrer"
             >
-              Hotlines
+              Emergency hotlines
             </a>
             <div className="hidden md:block">
               <select
@@ -97,18 +85,21 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <CheckCircle2 className="h-12 w-12 mr-3" />
+              <CheckCircle2
+                className="mr-3 h-12 w-12 text-primary-600"
+                aria-hidden="true"
+              />
               {/* <img
                 src="/ph-logo.webp"
                 alt="Philippines Coat of Arms"
                 className="h-12 w-12 mr-3"
               /> */}
               <div>
-                <div className="text-black font-bold">
-                  {import.meta.env.VITE_GOVERNMENT_NAME}
+                <div className="font-bold text-gray-950">
+                  Municipality of Camalaniugan
                 </div>
                 <div className="text-xs text-gray-800">
-                  {t('site_description')}
+                  Province of Cagayan | Where the BEST begins
                 </div>
               </div>
             </Link>
@@ -122,7 +113,9 @@ const Navbar: React.FC = () => {
                   href={item.href}
                   className="flex items-center text-gray-700 hover:text-primary-600 font-medium transition-colors"
                 >
-                  {t(`navbar.${item.label.replace(' ', '').toLowerCase()}`)}
+                  {t(`navbar.${item.label.replace(' ', '').toLowerCase()}`, {
+                    defaultValue: item.label,
+                  })}
                   {item.children && (
                     <ChevronDown className="ml-1 h-4 w-4 text-gray-800 group-hover:text-primary-600 transition-colors" />
                   )}
@@ -155,7 +148,7 @@ const Navbar: React.FC = () => {
               to="/about"
               className="flex items-center text-gray-700 hover:text-primary-600 font-medium transition-colors"
             >
-              About
+              About Camalaniugan
             </Link>
             {isMeilisearchEnabled && (
               <Link
@@ -200,7 +193,9 @@ const Navbar: React.FC = () => {
                 onClick={() => toggleSubmenu(item.label)}
                 className="w-full flex justify-between items-center px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
               >
-                {t(`navbar.${item.label.toLowerCase()}`)}
+                {t(`navbar.${item.label.toLowerCase()}`, {
+                  defaultValue: item.label,
+                })}
                 {item.children && (
                   <ChevronDown
                     className={`h-5 w-5 transition-transform ${
@@ -226,18 +221,11 @@ const Navbar: React.FC = () => {
             </div>
           ))}
           <Link
-            to="/join-us"
-            onClick={closeMenu}
-            className="block px-4 py-2 text-base font-semibold text-primary-600 hover:bg-primary-50 hover:text-primary-700"
-          >
-            🚀 Join Us
-          </Link>
-          <Link
             to="/about"
             onClick={closeMenu}
             className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
           >
-            About
+            About Camalaniugan
           </Link>
           {isMeilisearchEnabled && (
             <Link

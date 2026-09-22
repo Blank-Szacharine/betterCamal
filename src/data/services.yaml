@@ -4,63 +4,53 @@
 # Non-technical users can easily edit this file to add, remove, or modify service categories
 
 categories:
-  # Health Services
   - category: 'Health Services'
     slug: 'health-services'
-    description: 'Where to go for free check-ups, vaccines, and medicines, which hospitals are available, and details on health programs in your area.'
+    description: 'Official Camalaniugan health programs and services listed in the Citizen’s Charter.'
     icon: 'Heart'
 
-  # Education Services
   - category: 'Education'
     slug: 'education'
-    description: 'Where to enroll kids in daycare or preschool, how to apply for scholarships, and what education support your LGU offers.'
+    description: 'Employment, youth, and other citizen-facing support services listed in the Citizen’s Charter.'
     icon: 'GraduationCap'
 
-  # Business & Livelihood Services
   - category: 'Business and Livelihood'
     slug: 'business'
-    description: 'What permits and clearances you need, where to pay taxes or renew permits, and what livelihood or trade opportunities are offered.'
+    description: 'Permits, treasury transactions, market services, agriculture, and employment services in the Citizen’s Charter.'
     icon: 'Building2'
 
-  # Social Welfare Services
   - category: 'Social Welfare'
     slug: 'social-welfare'
-    description: 'What assistance is available for seniors, PWDs, solo parents, and indigent families, plus details on relief goods, and livelihood aid.'
+    description: 'Social welfare, PWD, youth, and senior citizen services listed in the Citizen’s Charter.'
     icon: 'Users'
   
-  # Agriculture & Fisheries Services
   - category: 'Agriculture & Fisheries'
     slug: 'agriculture-fisheries'
-    description: 'What farm or fishing support is available, including seeds, fertilizers, veterinary care, and where to join training or borrow equipment.'
+    description: 'Agriculture and fisheries technical assistance and animal health services in the Citizen’s Charter.'
     icon: 'Wheat'
   
-  # Infrastructure & Public Works Services
   - category: 'Infrastructure & Public Works'
     slug: 'infrastructure-public-works'
-    description: 'How to report damaged roads or drainage, where to request water supply, and how to access public facilities and markets.'
+    description: 'Water subscription, engineering permits, and land-use services listed in the Citizen’s Charter.'
     icon: 'Wrench'
   
-  # Garbage and Waste Disposal Services
   - category: 'Garbage and Waste Disposal'
     slug: 'garbage-waste-disposal'
-    description: 'Garbage collection schedules, waste disposal guidelines, and how to properly dispose of different types of waste.'
+    description: 'Business-related environmental clearance requirements and the official charter source.'
     icon: 'Trash2'
   
-  # Environment Services
   - category: 'Environment'
     slug: 'environment'
-    description: 'Clean-up or tree planting activities, environmental protection rules, and conservation programs.'
+    description: 'Tourism and economic enterprise services listed in the Citizen’s Charter.'
     icon: 'TreePine'
   
-  # Disaster Preparedness Services
   - category: 'Disaster Preparedness'
     slug: 'disaster-preparedness'
-    description: 'Disaster preparedness plans, emergency response information, and evacuation procedures.'
+    description: 'Emergency response, disaster risk reduction training, and non-emergency transport services.'
     icon: 'Shield'
   
-  # Housing & Land Use Services
   - category: 'Housing & Land Use'
     slug: 'housing-land-use'
-    description: 'How to apply for housing projects, what zoning and building permits are needed, and where relocation sites are available.'
+    description: 'Civil registry, assessment, legislative, accounting, budget, burial, and other charter services.'
     icon: 'Home'
   

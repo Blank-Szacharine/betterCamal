@@ -1,11 +1,14 @@
-# Environment Category Pages
-# This file contains all the pages/services available under the Environment category
+layout: grid
+title: 'Tourism and economic enterprise services'
+description: 'Choose a tourism or commercial measurement service.'
 
 pages:
-  - name: 'Join clean-up drives and tree planting activities'
-    slug: 'join-clean-up-drives-and-tree-planting-activities'
-    description: 'Information about participating in community clean-up drives and tree planting activities.'
-    
-  - name: 'Report illegal logging, quarrying, or fishing'
-    slug: 'report-illegal-logging-quarrying-or-fishing'
-    description: 'How to report illegal environmental activities like logging, quarrying, or illegal fishing.'
+  - name: 'Tourist Attraction Monitoring'
+    slug: 'tourist-attraction-monitoring'
+    description: 'Request monitoring and service support at a tourist attraction.'
+  - name: 'Tourism Information and Guiding'
+    slug: 'tourism-information-and-guiding'
+    description: 'Request tourism information or local guiding assistance.'
+  - name: 'Calibration of Weighing Scales'
+    slug: 'calibration-of-weighing-scales'
+    description: 'Have commercial weighing scales checked and sealed.'

@@ -1,15 +1,14 @@
-# Disaster Preparedness Category Pages
-# This file contains all the pages/services available under the Disaster Preparedness category
+layout: grid
+title: 'Disaster risk reduction and emergency services'
+description: 'Choose emergency response, training, or transport assistance.'
 
 pages:
-  - name: 'Join disaster drills and evacuation planning'
-    slug: 'join-disaster-drills-and-evacuation-planning'
-    description: 'Information about participating in disaster drills and evacuation planning activities.'
-    
-  - name: 'Learn about emergency response procedures and evacuation routes'
-    slug: 'learn-about-emergency-response-procedures-and-evacuation-routes'
-    description: 'Details about emergency response procedures and evacuation routes in your area.'
-    
-  - name: 'Access disaster preparedness information and early warning systems'
-    slug: 'access-disaster-preparedness-information-and-early-warning-systems'
-    description: 'How to access disaster preparedness information and early warning systems.'
+  - name: 'Emergency Response'
+    slug: 'emergency-response'
+    description: 'Request urgent response assistance during an emergency.'
+  - name: 'DRR-CCA Trainings, Drills, and Information Campaigns'
+    slug: 'drr-cca-trainings-drills-and-information-campaigns'
+    description: 'Request disaster risk reduction training, drills, or information campaigns.'
+  - name: 'Non-Emergency Transport'
+    slug: 'non-emergency-transport'
+    description: 'Request approved municipal transport within or outside Camalaniugan.'

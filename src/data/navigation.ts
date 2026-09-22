@@ -13,6 +13,7 @@ interface Category {
 }
 
 export const mainNavigation: NavigationItem[] = [
+  { label: 'Home', href: '/' },
   {
     label: 'Services',
     href: '/services',
@@ -25,6 +26,8 @@ export const mainNavigation: NavigationItem[] = [
     label: 'Government',
     href: '/government/departments',
   },
+  { label: 'Updates', href: '/#updates' },
+  { label: 'About Camalaniugan', href: '/#about' },
 ];
 
 export const footerNavigation = {
@@ -32,12 +35,12 @@ export const footerNavigation = {
     {
       title: 'About',
       links: [
-        { label: 'About the Portal', href: '/about' },
+        { label: 'Municipal Profile', href: '/#about' },
         // { label: 'Privacy Policy', href: '/privacy' },
         // { label: 'Terms of Use', href: '/terms' },
         { label: 'Accessibility', href: '/accessibility' },
-        { label: 'Contact Us', href: '/about' },
-        { label: 'Community Discord', href: '/discord' },
+        { label: 'Contact Us', href: '/#contact' },
+        { label: 'Emergency Hotlines', href: '/#emergency' },
       ],
     },
     {
@@ -50,30 +53,22 @@ export const footerNavigation = {
             label: category.category,
             href: `/services/${category.slug}`,
           })),
-        { label: 'Hotlines', href: '/philippines/hotlines' },
-        { label: 'Holidays', href: '/philippines/holidays' },
+        { label: 'Emergency Hotlines', href: '/#emergency' },
       ],
     },
     {
       title: 'Government',
       links: [
-        { label: 'Open Data', href: 'https://data.gov.ph' },
+        { label: "Citizen's Charter", href: '/government/departments' },
+        { label: 'Bids and Awards', href: '/government/departments' },
         { label: 'Freedom of Information', href: 'https://www.foi.gov.ph' },
-        {
-          label: 'Contact Center',
-          href: 'https://contactcenterngbayan.gov.ph',
-        },
-        {
-          label: 'Official Gazette',
-          href: 'https://www.officialgazette.gov.ph',
-        },
       ],
     },
   ],
   socialLinks: [
-    { label: 'Facebook', href: 'https://facebook.com/govph' },
-    { label: 'Twitter', href: 'https://twitter.com/govph' },
-    { label: 'Instagram', href: 'https://instagram.com/govph' },
-    { label: 'YouTube', href: 'https://youtube.com/govph' },
+    {
+      label: 'Facebook',
+      href: 'https://www.facebook.com/profile.php?id=61571001161472',
+    },
   ],
 };

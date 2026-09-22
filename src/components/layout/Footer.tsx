@@ -8,11 +8,8 @@ import {
 } from 'lucide-react';
 import { footerNavigation } from '../../data/navigation';
 import { Link } from 'react-router';
-import { useTranslation } from 'react-i18next';
 
 const Footer: React.FC = () => {
-  const { t } = useTranslation('common');
-
   const getSocialIcon = (label: string) => {
     switch (label) {
       case 'Facebook':
@@ -42,13 +39,13 @@ const Footer: React.FC = () => {
               /> */}
 
               <div>
-                <div className="font-bold">{t('site_name')}</div>
-                <div className="text-xs text-gray-400">BetterGov.ph Portal</div>
+                <div className="font-bold">Municipality of Camalaniugan</div>
+                <div className="text-xs text-gray-400">Province of Cagayan</div>
               </div>
             </div>
             <p className="text-gray-400 text-sm mb-4">
-              A community portal providing Philippine citizens, businesses, and
-              visitors with information and services.
+              The official online portal for public services, announcements,
+              government information, and community updates in Camalaniugan.
             </p>
             <div className="flex space-x-4">
               {footerNavigation.socialLinks.map(link => (
@@ -87,7 +84,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              {t('footer.copyright')}
+              © Municipality of Camalaniugan. All Rights Reserved.
             </p>
             <div className="flex space-x-6">
               {/* <a

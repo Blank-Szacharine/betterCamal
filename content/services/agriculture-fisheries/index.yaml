@@ -1,19 +1,14 @@
-# Agriculture & Fisheries Category Pages
-# This file contains all the pages/services available under the Agriculture & Fisheries category
+layout: grid
+title: 'Municipal Agriculture Office services'
+description: 'Choose technical assistance for crops, fisheries, or animal health.'
 
 pages:
-  - name: 'Ask for free seeds, seedlings, fertilizers, or fingerlings'
-    slug: 'ask-for-free-seeds-seedlings-fertilizers-or-fingerlings'
-    description: 'How to request free agricultural inputs like seeds, seedlings, fertilizers, and fingerlings from your local government.'
-    
-  - name: 'Get veterinary services for livestock'
-    slug: 'get-veterinary-services-for-livestock'
-    description: 'Access veterinary services for your livestock and farm animals from local government veterinarians.'
-    
-  - name: 'Attend farming or fishing training'
-    slug: 'attend-farming-or-fishing-training'
-    description: 'Join training programs for farming and fishing techniques offered by your local government.'
-    
-  - name: 'Borrow farm tools or equipment from the LGU'
-    slug: 'borrow-farm-tools-or-equipment-from-the-lgu'
-    description: 'How to borrow farm tools and equipment from your local government unit.'
+  - name: 'Crop Pest and Disease Monitoring'
+    slug: 'crop-pest-and-disease-monitoring'
+    description: 'Request field diagnosis and technical assistance for crop problems.'
+  - name: 'Fisheries Pest and Disease Monitoring'
+    slug: 'fisheries-pest-and-disease-monitoring'
+    description: 'Request technical assistance for fisheries production and disease concerns.'
+  - name: 'Animal Disease Diagnosis or Treatment'
+    slug: 'animal-disease-diagnosis-or-treatment'
+    description: 'Request assessment and treatment guidance for animal disease.'
